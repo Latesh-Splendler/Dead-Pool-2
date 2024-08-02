@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Deadpool</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./download (4).jpeg" alt="">
+      </div>
+      <ul>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Get tickets.html">Get tickets</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="#"><ion-icon name="moon-outline"></ion-icon>
+        </a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content">
+        <span class="text">#1 movie in the world </span>
+        <h1>Watch new<br><span>deadpool 2</span><br>online</h1>
+        <button>buy access<ion-icon name="arrow-forward-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="image">
+        <img src="./download 5.jpeg" alt="">
+      </div>
+    </div>
+  </main>
+
+  <div class="shape"></div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script></a></li>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+          <script>
+              TweenMax.from(".logo", 1, {
+              opacity:0,
+              x: -20,
+              ease: Expo.easeInout
+            })
+
+            TweenMax.from("ul li", 1, {
+              opacity:0,
+              x: -70,
+              ease: Expo.easeInout
+            }, 0.02)
+
+            TweenMax.from(".text", 2, {
+              opacity:0,
+              x: -70,
+              ease: Expo.easeInout
+            })
+            TweenMax.from(".content h1", 2, {
+              opacity:0,
+              x:-70,
+              ease: Expo.easeInOut
+            })
+
+            TweenMax.from(".content button", 3, {
+              opacity:0,
+              x:-70,
+              ease: Expo.easeInOut
+            })
+
+            TweenMax.from(".image img", 1, {
+              opacity:0,
+              Y: 70,
+              ease: Expo.easeInout,
+              delay: 2
+            })
+            
+            TweenMax.from(".shape", 2, {
+              opacity:0,
+              Y: -700,
+              ease: Expo.easeInout,
+              delay: 1
+            }) 
+
+            let moon = document.querySelector('ul li a ion-icon');
+            let body = document.querySelector('body');
+
+            moon.addEventListener('click', () => {
+              if(moon.getAttribute('name')== "sunny-outline"){
+                moon.setAttribute('name', 'moon-outline');
+                body.classList.remove('active');
+              }else{
+                moon.setAttribute('name', 'sunny-outline');
+                body.classList.add('active');
+              }
+            })
+            </script>
+
+<footer>
+  author: George Ndungu<br>
+  &copy; Copyright Reserved<br>
+  <a href="georgendungu559@gmail.com"
+  target="_blank"
+  title="Goes to Gmail">
+  Click Me
+    </a>
+
+    <li><a href=""><img src="Git hub logo.jpeg" alt=""></a></li>
+    <li><a href=""><img src="instagram logo.jpeg" alt=""></a></li>
+</footer>
+
+</body>
+</html>
